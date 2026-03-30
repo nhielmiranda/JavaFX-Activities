@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.nhiel.gui.javafxapp.FoodOrderController">
+
+    <Label text="Food Ordering System"/>
+
+    <HBox spacing="60" alignment="CENTER">
+
+        <!-- FOODS -->
+        <GridPane hgap="20" vgap="10">
+
+            <Label text="Foods" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <CheckBox fx:id="cPizza" text="Pizza" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Label text="Php 100" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <CheckBox fx:id="cBurger" text="Burger" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Label text="Php 80" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <CheckBox fx:id="cFries" text="Fries" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Label text="Php 65" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <CheckBox fx:id="cSoftDrinks" text="Soft Drinks" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <Label text="Php 55" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <CheckBox fx:id="cTea" text="Tea" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <Label text="Php 50" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+            <CheckBox fx:id="cSundae" text="Sundae" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <Label text="Php 40" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        </GridPane>
+
+        <!-- DISCOUNTS -->
+        <VBox spacing="10">
+            <Label text="Discounts"/>
+
+            <RadioButton fx:id="rbNone" text="None" selected="true"/>
+            <RadioButton fx:id="rb5" text="5% Off"/>
+            <RadioButton fx:id="rb10" text="10% Off"/>
+            <RadioButton fx:id="rb15" text="15% Off"/>
+        </VBox>
+
+    </HBox>
+
+    <Button fx:id="btnOrder" text="Order" onAction="#handleOrder"/>
+
+</VBox>

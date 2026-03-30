@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.nhiel.gui.javafxapp.CharacterRemoverController">
+
+    <Label text="Character Remover"/>
+
+    <Label fx:id="textLabel"
+           text="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
+
+    <!-- Checkboxes in ONE ROW -->
+    <HBox spacing="15" alignment="CENTER">
+        <CheckBox fx:id="vowelCheckbox" text="Vowels"/>
+        <CheckBox fx:id="consonantCheckbox" text="Consonants"/>
+        <CheckBox fx:id="numberCheckbox" text="Numbers"/>
+    </HBox>
+
+    <Button fx:id="removeButton" text="Remove"
+            onAction="#handleRemove"/>
+
+    <Button fx:id="restoreButton" text="Restore"
+            onAction="#handleRestore"/>
+
+</VBox>
