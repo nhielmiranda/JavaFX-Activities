@@ -13,7 +13,6 @@
     <Label fx:id="textLabel"
            text="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
-    <!-- Checkboxes in ONE ROW -->
     <HBox spacing="15" alignment="CENTER">
         <CheckBox fx:id="vowelCheckbox" text="Vowels"/>
         <CheckBox fx:id="consonantCheckbox" text="Consonants"/>
