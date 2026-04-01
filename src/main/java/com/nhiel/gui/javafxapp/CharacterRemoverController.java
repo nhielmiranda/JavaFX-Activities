@@ -15,14 +15,13 @@ public class CharacterRemoverController {
 
     @FXML
     public void initialize() {
-        // Set component "names"
+        
         vowelCheckbox.setId("vowelCheckbox");
         consonantCheckbox.setId("consonantCheckbox");
         numberCheckbox.setId("numberCheckbox");
 
         textLabel.setId("textLabel");
 
-        // Optional (extra safe naming)
         vowelCheckbox.setAccessibleText("vowelCheckbox");
         consonantCheckbox.setAccessibleText("consonantCheckbox");
         numberCheckbox.setAccessibleText("numberCheckbox");
